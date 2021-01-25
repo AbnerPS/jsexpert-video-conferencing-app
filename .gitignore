@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# vuepress build output
+.vuepress/dist
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Optional npm cache directory
+.npm
