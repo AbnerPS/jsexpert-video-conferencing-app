@@ -11,6 +11,13 @@
 
 ![room](./public/prints/room.png)
 
+## Navegadores suportados
+
+#### Gravação
+
+- Chrome
+- FireFox
+
 ### Créditos
 
 - Projeto ministrado por [Erick Wendel](https://github.com/ErickWendel)
