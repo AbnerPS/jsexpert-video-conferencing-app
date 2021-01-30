@@ -3,7 +3,7 @@ class View {
 
     }
 
-    createVideoElement({muted = true, src, srcObject}) {
+    createVideoElement({ muted = true, src, srcObject }) {
         const video = document.createElement('video')
         video.muted = muted
         video.src = src
@@ -22,8 +22,8 @@ class View {
         return video
     }
 
-    renderVideo({ userID, stream = null, url = null, isCurrentID = false}) {
-        const video = this.createVideoElement({ src: url, srcObject: stream })
+    renderVideo({ userID, stream = null, url = null, isCurrentID = false, muted = true}) {
+        const video = this.createVideoElement({ muted, src: url, srcObject: stream })
         this.appendToHTMLTree(userID, video, isCurrentID)
     }
 
@@ -40,5 +40,11 @@ class View {
         const videoGrid = document.getElementById('video-grid')
         videoGrid.append(div)
 
+    }
+
+    setParticipants(count) {
+        const myself = 1
+        const participants = document.getElementById('participants')
+        participants.innerHTML = (count + myself)
     }
 }
